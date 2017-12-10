@@ -325,19 +325,20 @@
 <p>10</p>
 <p>1 90 85 90</p>
 <p>1 80 90 75</p>
-<p>2 1                       265</p>
-<p>3 2                       80 90 75</p>
-<p>4                        255.00</p>
+<p>2 1                                   265</p>
+<p>3 2                                   80 90 75</p>
+<p>4                                    255.00</p>
 <p>1 80 80 85</p>
 <p>1 50 60 65</p>
 <p>1 30 90 75</p>
-<p>3 5                       30 90 75</p>
-<p>4                        225.00</p>
+<p>3 5                                   30 90 75</p>
+<p>4                                    225.00</p>
 <p>【程序】</p>
-<p>#include <iostream> </iostream></p>
-<p>#include <cstdio> </cstdio></p>
-<p>#include <cstdlib><br>using namespace std;<br>class Score<br>{<br>private:<br>    int Chinese, Math, English;<br>    static int TotalScore;<br>    static int TotalStudent;<br>public:<br>    Score() {}<br>    void setScore (int c, int m, int e)<br>    {<br>        Chinese=c;<br>        Math=m;<br>        English=e;<br>        TotalScore+=c+m+e;<br>        TotalStudent++;<br>    }<br>    int Sum()<br>    {<br>        return Chinese+Math+English;<br>    }<br>    void Show()<br>    {<br>        cout&lt;&lt;Chinese&lt;&lt;’ ‘&lt;&lt;Math&lt;&lt;’ ‘&lt;&lt;English&lt;&lt;endl;<br>    }<br>    double static getAve()<br>    {<br>        return TotalScore*1.0/TotalStudent;<br>    }<br>};<br>int Score::TotalScore=0;<br>int Score::TotalStudent=0;</cstdlib></p>
-<p>int main()<br>{<br>    int n, op, i, c, m, e;<br>    cin &gt;&gt; n;<br>    int id = 1;<br>    Score sco[11];<br>    while(n–)<br>    {<br>        cin &gt;&gt; op;<br>        if(op == 1)<br>        {<br>            cin &gt;&gt; c &gt;&gt; m &gt;&gt; e;<br>            sco[id].setScore(c,m,e);<br>            id++;<br>        }<br>        else if(op == 2)<br>            {<br>                cin &gt;&gt; i;<br>                cout&lt;<sco[i].sum()<<endl; }="" else="" if(op="=" 3)="" {="" cin="">&gt; i;<br>                sco[i].Show();<br>            }<br>            else<br>            {<br>              printf(“%.2f\n”, sco[i].getAve());<br>            }<br>    }<br>    return 0;<br>} </sco[i].sum()<<endl;></p>
+<p>​    include <iostream></iostream></p>
+<p>​    include <cstdio></cstdio></p>
+<p>​    include <cstdlib></cstdlib></p>
+<p>​    using namespace std;<br>​    class Score<br>​    {<br>​    private:<br>        int Chinese, Math, English;<br>        static int TotalScore;<br>        static int TotalStudent;<br>​    public:<br>        Score() {}<br>    void setScore (int c, int m, int e)<br>    {<br>        Chinese=c;<br>        Math=m;<br>        English=e;<br>        TotalScore+=c+m+e;<br>        TotalStudent++;<br>    }<br>    int Sum()<br>    {<br>        return Chinese+Math+English;<br>    }<br>    void Show()<br>    {<br>        cout&lt;&lt;Chinese&lt;&lt;’ ‘&lt;&lt;Math&lt;&lt;’ ‘&lt;&lt;English&lt;&lt;endl;<br>    }<br>    double static getAve()<br>    {<br>        return TotalScore*1.0/TotalStudent;<br>    }<br>};<br>int Score::TotalScore=0;<br>int Score::TotalStudent=0;</p>
+<p>int main()<br>{<br>    int n, op, i, c, m, e;<br>    cin &gt;&gt; n;<br>    int id = 1;<br>    Score sco[11];<br>    while(n–)<br>    {<br>        cin &gt;&gt; op;<br>        if(op == 1)<br>        {<br>            cin &gt;&gt; c &gt;&gt; m &gt;&gt; e;<br>            sco[id].setScore(c,m,e);<br>            id++;<br>        }<br>        else if(op == 2)<br>            {<br>                cin &gt;&gt; i;<br>                cout&lt;<sco[i].sum()<<endl; }="" else="" if(op="=" 3)="" {="" cin="">&gt; i;<br>                sco[i].Show();<br>            }<br>            else<br>            {<br>              printf(“%.2f\n”, sco[i].getAve());<br>            }<br>    }<br>    return 0;<br>}     </sco[i].sum()<<endl;></p>
 
           
         
