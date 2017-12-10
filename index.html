@@ -309,30 +309,14 @@
 
       
         
-          
-            <h2 id="课堂作业：类-时钟"><a href="#课堂作业：类-时钟" class="headerlink" title="课堂作业：类_时钟"></a>课堂作业：类_时钟</h2><p>【程序】</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;windows.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">class Time</span><br><span class="line">&#123;</span><br><span class="line">private:</span><br><span class="line">	int Hour,Minute,Second;</span><br><span class="line">public:</span><br><span class="line">	Time(int h=0,int m=0,int s=0);</span><br><span class="line">	void Show();</span><br><span class="line">	void setMinute();</span><br><span class="line">	void setHour();</span><br><span class="line">	void setAll();</span><br><span class="line">	void runSecond();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Time::Time(int h,int m,int s)</span><br><span class="line">&#123;</span><br><span class="line">	Hour=h;Minute=m;Second=s;</span><br><span class="line">&#125; </span><br><span class="line">void Time::runSecond()</span><br><span class="line">&#123;</span><br><span class="line">	Second++;</span><br><span class="line">	if(Second&gt;59)</span><br><span class="line">		setMinute();</span><br><span class="line">	if(Minute&gt;59)</span><br><span class="line">		setHour();</span><br><span class="line">	if(Hour&gt;23)</span><br><span class="line">		setAll();</span><br><span class="line">&#125;</span><br><span class="line">void Time::Show()</span><br><span class="line">&#123;</span><br><span class="line">	cout&lt;&lt;&apos;\r&apos;&lt;&lt;Hour&lt;&lt;&quot;时&quot;&lt;&lt;Minute&lt;&lt;&quot;分&quot;&lt;&lt;Second&lt;&lt;&quot;秒&quot;; </span><br><span class="line">&#125;</span><br><span class="line">void Time::setMinute()</span><br><span class="line">&#123;</span><br><span class="line">	Minute++;</span><br><span class="line">	Second=0;</span><br><span class="line">&#125;</span><br><span class="line">void Time::setHour()</span><br><span class="line">&#123;</span><br><span class="line">	Hour++;</span><br><span class="line">	Minute=0;</span><br><span class="line">&#125;</span><br><span class="line">void Time::setAll()</span><br><span class="line">&#123;</span><br><span class="line">	Second=0;</span><br><span class="line">	Minute=0;</span><br><span class="line">	Hour=0;</span><br><span class="line">&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int h,m,s;</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	Time t(h,m,s);</span><br><span class="line">	while(1)</span><br><span class="line">	&#123;</span><br><span class="line">		t.Show();</span><br><span class="line">		t.runSecond();</span><br><span class="line">		Sleep(1000);</span><br><span class="line">	&#125;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="第八章：学生成绩类2"><a href="#第八章：学生成绩类2" class="headerlink" title="第八章：学生成绩类2"></a>第八章：学生成绩类2</h2><p>【问题描述】设计学生成绩类Score。在主函数中定义学生成绩对象数组s[]。用Sum()计算每个学生的总成绩、用Show()显示每个学生的成绩。增加静态成员函数getAvg()，用于返回学生的总平均分。通过增加合适的成员、修改成员函数等完成这一功能。</p>
-<p>【输入形式】</p>
-<p>包含一组测试数据。第一行输入一个整数n（1&lt;=n&lt;=100）。</p>
-<p>接下来n行。每行先输入一个整数op：</p>
-<p>当op==1时，输入x, y, z。代表输入一位新同学i(i从1开始编号)的语文、数学、英语成绩，无需输出。</p>
-<p>当op==2时，输入i，输出第i同学的总成绩。数据保证这位同学的成绩已经录入。</p>
-<p>当op==3时，输入i，依次输出第i同学的语文数学英语成绩，成绩之间用空格隔开。</p>
-<p>当op==4时，输出当前已经录入学生的总平均分，结果保留两位小数。</p>
-<p>(1&lt;=n&lt;=100, 1&lt;=id&lt;=10, 1&lt;=op&lt;=3, 0&lt;=x,y,z&lt;=100,全部输入都为整型数)</p>
-<p>【输出形式】</p>
-<p>当op==2，3，4时，输出所求答案，每个答案占一行。</p>
-<p>【样例输入】<br>10<br>1 90 85 90<br>1 80 90 75<br>2 1<br>3 2<br>4<br>1 80 80 85<br>1 50 60 65<br>1 30 90 75<br>3 5<br>4 </p>
-<p>【对应样例输出】</p>
-<p>265</p>
-<p>80 90 75</p>
-<p>255.00</p>
-<p>30 90 75</p>
-<p>225.00</p>
-<p>【程序】</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt; </span><br><span class="line">#include &lt;cstdio&gt; </span><br><span class="line">#include &lt;cstdlib&gt; </span><br><span class="line">using namespace std; </span><br><span class="line">class Score</span><br><span class="line">&#123; </span><br><span class="line">private: </span><br><span class="line">	int Chinese, Math, English; </span><br><span class="line">	static int TotalScore; </span><br><span class="line">	static int TotalStudent; </span><br><span class="line">public: </span><br><span class="line">	Score() &#123;&#125; </span><br><span class="line">	void setScore (int c, int m, int e) </span><br><span class="line">	&#123;</span><br><span class="line">		Chinese=c;</span><br><span class="line">		Math=m;</span><br><span class="line">		English=e;</span><br><span class="line">		TotalScore+=c+m+e;</span><br><span class="line">		TotalStudent++;</span><br><span class="line">	&#125; </span><br><span class="line">	int Sum() </span><br><span class="line">	&#123;</span><br><span class="line">		return Chinese+Math+English;</span><br><span class="line">	&#125; </span><br><span class="line">	void Show() </span><br><span class="line">	&#123;</span><br><span class="line">		cout&lt;&lt;Chinese&lt;&lt;&apos; &apos;&lt;&lt;Math&lt;&lt;&apos; &apos;&lt;&lt;English&lt;&lt;endl;</span><br><span class="line">	&#125; </span><br><span class="line">	double static getAve() </span><br><span class="line">	&#123;</span><br><span class="line">		return TotalScore*1.0/TotalStudent;</span><br><span class="line">	&#125; </span><br><span class="line">&#125;; </span><br><span class="line">int Score::TotalScore=0;</span><br><span class="line">int Score::TotalStudent=0;</span><br><span class="line"></span><br><span class="line">int main() </span><br><span class="line">&#123; </span><br><span class="line">	int n, op, i, c, m, e; </span><br><span class="line">	cin &gt;&gt; n; </span><br><span class="line">	int id = 1; </span><br><span class="line">	Score sco[11]; </span><br><span class="line">	while(n--)</span><br><span class="line">	&#123; </span><br><span class="line">		cin &gt;&gt; op; </span><br><span class="line">		if(op == 1)</span><br><span class="line">		&#123; </span><br><span class="line">			cin &gt;&gt; c &gt;&gt; m &gt;&gt; e; </span><br><span class="line">			sco[id].setScore(c,m,e);</span><br><span class="line">			id++;</span><br><span class="line">		&#125;</span><br><span class="line">		else if(op == 2)</span><br><span class="line">			&#123; </span><br><span class="line">				cin &gt;&gt; i;</span><br><span class="line">				cout&lt;&lt;sco[i].Sum()&lt;&lt;endl;	</span><br><span class="line">			&#125; </span><br><span class="line">			else if(op == 3) </span><br><span class="line">			&#123; </span><br><span class="line">				cin &gt;&gt; i; </span><br><span class="line">				sco[i].Show();</span><br><span class="line">			&#125; </span><br><span class="line">			else </span><br><span class="line">			&#123; </span><br><span class="line">				printf(&quot;%.2f\n&quot;, sco[i].getAve());</span><br><span class="line">			&#125; </span><br><span class="line">	&#125; </span><br><span class="line">	return 0; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
+          课堂作业——类_时钟，4个CG作业
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/10/第十三周作业/">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -449,21 +433,14 @@
 
       
         
-          
-            <h2 id="Hexo-Github搭建博客"><a href="#Hexo-Github搭建博客" class="headerlink" title="Hexo+Github搭建博客"></a><strong>Hexo+Github搭建博客</strong></h2><h2 id="备忘："><a href="#备忘：" class="headerlink" title="备忘："></a>备忘：</h2><p>​    Hexo 位置    E:blog\</p>
-<p>​    开启服务器    hexo s        窗口被占用    hexo server -p 5000(端口号)</p>
-<p>​    新建文章        hexo new post “article title”</p>
-<p>​    文章生成及部署    hexo d -g</p>
-<p>​    </p>
-<h2 id="仍需改进："><a href="#仍需改进：" class="headerlink" title="仍需改进："></a>仍需改进：</h2><p>​    NexT主题更换</p>
-<p>​    侧边栏配置</p>
-<p>​    设置作者、站点描述、插入头像图片等</p>
-<h2 id="参考博客："><a href="#参考博客：" class="headerlink" title="参考博客："></a>参考博客：</h2><p>​    <a href="http://blog.csdn.net/gdutxiaoxu/article/details/53576018" target="_blank" rel="noopener">http://blog.csdn.net/gdutxiaoxu/article/details/53576018</a> 手把手教你用Hexo+Github 搭建属于自己的博客</p>
-<p>​    <a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="noopener">http://www.jianshu.com/p/e99ed60390a8</a> 20分钟教你使用hexo搭建github博客</p>
-<p>​    <a href="http://www.cnblogs.com/fengxiongZz/p/7707219.html" target="_blank" rel="noopener">http://www.cnblogs.com/fengxiongZz/p/7707219.html</a> 使用Hexo+Github一步步搭建属于自己的博客（基础及进阶）</p>
-<p>​    <a href="https://hexo.io" target="_blank" rel="noopener">https://hexo.io</a> 官网</p>
-
-          
+          Hexo+Github搭建博客:备忘、改进及参考
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/08/Hello-Hexo/">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -580,18 +557,14 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/12/08/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
