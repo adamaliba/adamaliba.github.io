@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="文件夹选中次数	implementation	难度等级：1">
+<meta name="description" content="拼凑子串需要多少母串	greedy，strings	难度等级：1">
 <meta name="keywords" content="ACM,CGOJ">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ACM 24. Frames">
-<meta property="og:url" content="http://yoursite.com/2017/12/12/ACM-24-Frames/index.html">
+<meta property="og:title" content="ACM 29. Newspaper Headline">
+<meta property="og:url" content="http://yoursite.com/2017/12/21/ACM-29-Newspaper-Headline/index.html">
 <meta property="og:site_name" content="CUMT PAN Tianyi">
-<meta property="og:description" content="文件夹选中次数	implementation	难度等级：1">
+<meta property="og:description" content="拼凑子串需要多少母串	greedy，strings	难度等级：1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-12T03:29:35.921Z">
+<meta property="og:updated_time" content="2017-12-20T16:56:39.242Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ACM 24. Frames">
-<meta name="twitter:description" content="文件夹选中次数	implementation	难度等级：1">
+<meta name="twitter:title" content="ACM 29. Newspaper Headline">
+<meta name="twitter:description" content="拼凑子串需要多少母串	greedy，strings	难度等级：1">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/12/12/ACM-24-Frames/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/21/ACM-29-Newspaper-Headline/"/>
 
 
 
 
 
-  <title>ACM 24. Frames | CUMT PAN Tianyi</title>
+  <title>ACM 29. Newspaper Headline | CUMT PAN Tianyi</title>
   
 
 
@@ -243,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/12/ACM-24-Frames/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/21/ACM-29-Newspaper-Headline/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PAN Tianyi">
@@ -260,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">ACM 24. Frames</h1>
+          <h1 class="post-title" itemprop="name headline">ACM 29. Newspaper Headline</h1>
         
 
         <div class="post-meta">
@@ -272,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-12T11:06:55+08:00">
-                2017-12-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-21T00:56:39+08:00">
+                2017-12-21
               </time>
             
 
@@ -290,7 +290,7 @@
 
           
           
-             <span id="/2017/12/12/ACM-24-Frames/" class="leancloud_visitors" data-flag-title="ACM 24. Frames">
+             <span id="/2017/12/21/ACM-29-Newspaper-Headline/" class="leancloud_visitors" data-flag-title="ACM 29. Newspaper Headline">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -308,7 +308,7 @@
 
           
               <div class="post-description">
-                  文件夹选中次数	implementation	难度等级：1
+                  拼凑子串需要多少母串	greedy，strings	难度等级：1
               </div>
           
 
@@ -325,27 +325,26 @@
       
 
       
-        <h2 id="【题目】24-Frames"><a href="#【题目】24-Frames" class="headerlink" title="【题目】24. Frames"></a>【题目】24. Frames</h2><p>Throughout Igor K.’s life he has had many situations worthy of attention. We remember the story with the virus, the story of his mathematical career and of course, his famous programming achievements. However, one does not always adopt new hobbies, one can quit something as well.</p>
-<p>This time Igor K. got disappointed in one of his hobbies: editing and voicing videos. Moreover, he got disappointed in it so much, that he decided to destroy his secret archive for good.</p>
-<p>Igor K. use Pindows XR operation system which represents files and folders by small icons. At that, <em>m</em> icons can fit in a horizontal row in any window.</p>
-<p>Igor K.’s computer contains <em>n</em> folders in the D: disk’s root catalog. The folders are numbered from 1 to <em>n</em> in the order from the left to the right and from top to bottom (see the images). At that the folders with secret videos have numbers from <em>a</em> to <em>b</em> inclusive. Igor K. wants to delete them forever, at that making as few frame selections as possible, and then pressing Shift+Delete exactly once. What is the minimum number of times Igor K. will have to select the folder in order to select folders from <em>a</em> to <em>b</em> and only them? Let us note that if some selected folder is selected repeatedly, then it is deselected. Each selection possesses the shape of some rectangle with sides parallel to the screen’s borders.</p>
+        <h2 id="【题目】29-Newspaper-Headline"><a href="#【题目】29-Newspaper-Headline" class="headerlink" title="【题目】29. Newspaper Headline"></a>【题目】29. Newspaper Headline</h2><p>A newspaper is published in Walrusland. Its heading is <em>s</em>1, it consists of lowercase Latin letters. Fangy the little walrus wants to buy several such newspapers, cut out their headings, glue them one to another in order to get one big string. After that walrus erase several letters from this string in order to get a new word <em>s</em>2. It is considered that when Fangy erases some letter, there’s no whitespace formed instead of the letter. That is, the string remains unbroken and it still only consists of lowercase Latin letters.</p>
+<p>For example, the heading is “abc”. If we take two such headings and glue them one to the other one, we get “abcabc”. If we erase the letters on positions 1 and 5, we get a word “bcac”.</p>
+<p>Which least number of newspaper headings <em>s</em>1 will Fangy need to glue them, erase several letters and get word <em>s</em>2?</p>
 <p>Input</p>
-<p>The only line contains four integers <em>n</em>, <em>m</em>, <em>a</em>, <em>b</em> (1≤<em>n</em>,<em>m</em>≤109, 1≤<em>a</em>≤<em>b</em>≤<em>n</em>). They are the number of folders in Igor K.’s computer, the width of a window and the numbers of the first and the last folders that need to be deleted.</p>
+<p>The input data contain two lines. The first line contain the heading <em>s</em>1, the second line contains the word <em>s</em>2. The lines only consist of lowercase Latin letters (1≤|<em>s</em>1|≤104,1≤|<em>s</em>2|≤106).</p>
 <p>Output</p>
-<p>Print a single number: the least possible number of times Igor K. will have to select the folders using frames to select only the folders with numbers from <em>a</em> to <em>b</em>.</p>
+<p>If it is impossible to get the word <em>s</em>2 in the above-described manner, print “-1” (without the quotes). Otherwise, print the least number of newspaper headings <em>s</em>1, which Fangy will need to receive the word <em>s</em>2.</p>
 <p>Examples</p>
 <p>Input</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">11 4 3 9</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">abc</span><br><span class="line">xyz</span><br></pre></td></tr></table></figure>
 <p>Output</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-1</span><br></pre></td></tr></table></figure>
 <p>Input</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">20 5 2 20</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">abcd</span><br><span class="line">dabc</span><br></pre></td></tr></table></figure>
 <p>Output</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure>
-<h2 id="【程序】"><a href="#【程序】" class="headerlink" title="【程序】"></a>【程序】</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,m,a,b,z=<span class="number">0</span>;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="keyword">if</span>(b==n)</span><br><span class="line">		b=n/m*m+m;</span><br><span class="line">	<span class="keyword">if</span>((a<span class="number">-1</span>)/m==(b<span class="number">-1</span>)/m)</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;<span class="number">1</span>;</span><br><span class="line">	<span class="keyword">else</span>	<span class="keyword">if</span>((a<span class="number">-1</span>)/m-(b<span class="number">-1</span>)/m==<span class="number">-1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>((a<span class="number">-1</span>)%m==<span class="number">0</span>&amp;&amp;b%m==<span class="number">0</span>)</span><br><span class="line">			<span class="built_in">cout</span>&lt;&lt;<span class="number">1</span>;</span><br><span class="line">		<span class="keyword">else</span>	<span class="built_in">cout</span>&lt;&lt;<span class="number">2</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		z=<span class="number">3</span>;</span><br><span class="line">		<span class="keyword">if</span>((a<span class="number">-1</span>)%m==<span class="number">0</span>)</span><br><span class="line">			z--;</span><br><span class="line">		<span class="keyword">if</span>(b%m==<span class="number">0</span>)</span><br><span class="line">			z--;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;z;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="【分析】"><a href="#【分析】" class="headerlink" title="【分析】"></a>【分析】</h2><p>implementation    难度等级：1</p>
-<p>第五组数据测试失败，原因是11行两个商减反了。</p>
-<p>虽然是一级题，但做起来有困难，主要是把图形转换成商和余数的形式。文件总数n没有意义。</p>
+<h2 id="【程序】"><a href="#【程序】" class="headerlink" title="【程序】"></a>【程序】</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//2017年12月21日0:26:16</span></span><br><span class="line"><span class="comment">// 2017年12月21日0:50:17 </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">string</span> s1,s2;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">test</span><span class="params">(<span class="keyword">char</span> *p,<span class="keyword">char</span> *q)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i;</span><br><span class="line">	<span class="keyword">int</span> a[<span class="number">127</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;*(p+i);i++)</span><br><span class="line">		a[*(p+i)]++;</span><br><span class="line">	<span class="keyword">for</span>(i=<span class="number">0</span>;*(q+i);i++)</span><br><span class="line">		<span class="keyword">if</span>(a[*(q+i)]==<span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> i,time=<span class="number">1</span>;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;s1&gt;&gt;s2;</span><br><span class="line">	<span class="keyword">char</span> *p=&amp;s1[<span class="number">0</span>],*q=&amp;s2[<span class="number">0</span>];</span><br><span class="line">	<span class="keyword">if</span>(test(p,q))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span>(i=<span class="number">0</span>;*(p+i)&amp;&amp;*q;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span>(*(p+i)==*q)</span><br><span class="line">				q++;</span><br><span class="line">			<span class="keyword">if</span>(*(p+i+<span class="number">1</span>)==<span class="number">0</span>&amp;&amp;*q)</span><br><span class="line">			&#123;</span><br><span class="line">				i=<span class="number">-1</span>;</span><br><span class="line">				time++;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">cout</span>&lt;&lt;time;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="built_in">cout</span>&lt;&lt;<span class="number">-1</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="【分析】"><a href="#【分析】" class="headerlink" title="【分析】"></a>【分析】</h2><p>greedy，strings    难度等级：1</p>
+<p>比较简单，长时间没刷题了，手生。</p>
+<p>先用函数检查子串的元素是否在母串中都存在。用指针在母串中循环比较是否与子串元素相等，每循环一次计数器加一，子串检查完时结束。</p>
 
       
     </div>
@@ -407,8 +406,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/11/ACM-30-African-Crossword/" rel="next" title="ACM 30. African Crossword">
-                <i class="fa fa-chevron-left"></i> ACM 30. African Crossword
+              <a href="/2017/12/19/第十四周实验课/" rel="next" title="第十四周实验课">
+                <i class="fa fa-chevron-left"></i> 第十四周实验课
               </a>
             
           </div>
@@ -417,8 +416,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/12/12/ACM-18-Lucky-Numbers/" rel="prev" title="ACM 18.Lucky Numbers">
-                ACM 18.Lucky Numbers <i class="fa fa-chevron-right"></i>
+              <a href="/2017/12/21/第十四周作业/" rel="prev" title="第十四周作业">
+                第十四周作业 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -552,7 +551,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【题目】24-Frames"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x3010;&#x9898;&#x76EE;&#x3011;24-Frames" class="headerlink" title="&#x3010;&#x9898;&#x76EE;&#x3011;24. Frames"></a>&#x3010;&#x9898;&#x76EE;&#x3011;24. Frames</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【程序】"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x3010;&#x7A0B;&#x5E8F;&#x3011;" class="headerlink" title="&#x3010;&#x7A0B;&#x5E8F;&#x3011;"></a>&#x3010;&#x7A0B;&#x5E8F;&#x3011;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【分析】"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x3010;&#x5206;&#x6790;&#x3011;" class="headerlink" title="&#x3010;&#x5206;&#x6790;&#x3011;"></a>&#x3010;&#x5206;&#x6790;&#x3011;</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【题目】29-Newspaper-Headline"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x3010;&#x9898;&#x76EE;&#x3011;29-Newspaper-Headline" class="headerlink" title="&#x3010;&#x9898;&#x76EE;&#x3011;29. Newspaper Headline"></a>&#x3010;&#x9898;&#x76EE;&#x3011;29. Newspaper Headline</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【程序】"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x3010;&#x7A0B;&#x5E8F;&#x3011;" class="headerlink" title="&#x3010;&#x7A0B;&#x5E8F;&#x3011;"></a>&#x3010;&#x7A0B;&#x5E8F;&#x3011;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【分析】"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x3010;&#x5206;&#x6790;&#x3011;" class="headerlink" title="&#x3010;&#x5206;&#x6790;&#x3011;"></a>&#x3010;&#x5206;&#x6790;&#x3011;</span></a></li></ol></div>
             
 
           </div>
