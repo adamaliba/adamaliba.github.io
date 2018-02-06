@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ACM,CGOJ," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="CUMT PAN Tianyi">
-<meta property="og:url" content="http://yoursite.com/tags/技术实践/index.html">
+<meta name="description" content="较大数字的取余统计数学问题	math	难度等级：1">
+<meta name="keywords" content="ACM,CGOJ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ACM 1005.Divisibility">
+<meta property="og:url" content="http://yoursite.com/2018/02/06/ACM-1005-Divisibility/index.html">
 <meta property="og:site_name" content="CUMT PAN Tianyi">
+<meta property="og:description" content="较大数字的取余统计数学问题	math	难度等级：1">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-06T02:40:07.580Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CUMT PAN Tianyi">
+<meta name="twitter:title" content="ACM 1005.Divisibility">
+<meta name="twitter:description" content="较大数字的取余统计数学问题	math	难度等级：1">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/技术实践/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/06/ACM-1005-Divisibility/"/>
 
 
 
 
 
-  <title>标签: 技术实践 | CUMT PAN Tianyi</title>
+  <title>ACM 1005.Divisibility | CUMT PAN Tianyi</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,54 +229,211 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>技术实践<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/06/ACM-1005-Divisibility/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PAN Tianyi">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CUMT PAN Tianyi">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2017/12/08/Hello-Hexo/" itemprop="url">
-              
-                <span itemprop="name">Hello, Hexo!</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">ACM 1005.Divisibility</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-08T13:29:17+08:00"
-              content="2017-12-08" >
-          12-08
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-06T10:26:13+08:00">
+                2018-02-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/02/06/ACM-1005-Divisibility/" class="leancloud_visitors" data-flag-title="ACM 1005.Divisibility">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  较大数字的取余统计数学问题	math	难度等级：1
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="【题目】1005-Divisibility"><a href="#【题目】1005-Divisibility" class="headerlink" title="【题目】1005.Divisibility"></a>【题目】1005.Divisibility</h2><p>Find the number of <em>k</em>-divisible numbers on the segment [<em>a</em>, <em>b</em>]. In other words you need to find the number of such integer values <em>x</em> that <em>a</em> ≤ <em>x</em> ≤ <em>b</em> and <em>x</em> is divisible by <em>k</em>.</p>
+<p>Input</p>
+<p>The only line contains three space-separated integers <em>k</em>, <em>a</em> and <em>b</em> (1 ≤ <em>k</em> ≤ 10^18; - 10^18 ≤ <em>a</em> ≤ <em>b</em> ≤ 10^18).</p>
+<p>Output</p>
+<p>Print the required number.</p>
+<p>Examples</p>
+<p>input</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 1 10</span><br></pre></td></tr></table></figure>
+<p>output</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure>
+<p>input</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2 -4 4</span><br></pre></td></tr></table></figure>
+<p>output</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure>
+<h2 id="【程序】"><a href="#【程序】" class="headerlink" title="【程序】"></a>【程序】</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">test1</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Scanner input=<span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">		<span class="keyword">long</span> k=input.nextLong();</span><br><span class="line">		<span class="keyword">long</span> a=input.nextLong();</span><br><span class="line">		<span class="keyword">long</span> b=input.nextLong();</span><br><span class="line">		System.out.println(((b-(b%k+k)%k)-(a+(k-a%k)%k))/k+<span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="【分析】"><a href="#【分析】" class="headerlink" title="【分析】"></a>【分析】</h2><p>math    难度等级：1</p>
+<p>卡得最久的一道1级题。</p>
+<p>主要是数据大小范围是正负10^18，Java里要声明Long，C++声明“Long Long”！Long是32位，Long Long是64位！</p>
+<p>大的数要减去不能被整除的多余项，小数要加上，最后加个0项；算法有点经典，可以再用。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Your support will encourage me to continue creating & sharing</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat.png" alt="PAN Tianyi 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="PAN Tianyi 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ACM/" rel="tag"># ACM</a>
+          
+            <a href="/tags/CGOJ/" rel="tag"># CGOJ</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/02/第十七周实验课/" rel="next" title="第十七周实验课">
+                <i class="fa fa-chevron-left"></i> 第十七周实验课
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -279,6 +441,19 @@
 
 
           
+
+  <div class="comments" id="comments">
+
+    
+
+         <div id="uyan_frame">
+</div>
+
+    
+
+  </div>
+
+
         </div>
         
           
@@ -298,8 +473,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -352,6 +536,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#【题目】1005-Divisibility"><span class="nav-number">1.</span> <span class="nav-text"><a href="#&#x3010;&#x9898;&#x76EE;&#x3011;1005-Divisibility" class="headerlink" title="&#x3010;&#x9898;&#x76EE;&#x3011;1005.Divisibility"></a>&#x3010;&#x9898;&#x76EE;&#x3011;1005.Divisibility</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【程序】"><span class="nav-number">2.</span> <span class="nav-text"><a href="#&#x3010;&#x7A0B;&#x5E8F;&#x3011;" class="headerlink" title="&#x3010;&#x7A0B;&#x5E8F;&#x3011;"></a>&#x3010;&#x7A0B;&#x5E8F;&#x3011;</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#【分析】"><span class="nav-number">3.</span> <span class="nav-text"><a href="#&#x3010;&#x5206;&#x6790;&#x3011;" class="headerlink" title="&#x3010;&#x5206;&#x6790;&#x3011;"></a>&#x3010;&#x5206;&#x6790;&#x3011;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -499,6 +699,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -524,6 +728,10 @@
   
     
 
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2151519"></script>
+      <!-- UY END -->
     
   
 
