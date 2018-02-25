@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="CUMT PAN Tianyi">
 <meta property="og:description" content="对象交互与容器之前的语言基础细节整理">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-10T13:38:10.039Z">
+<meta property="og:updated_time" content="2018-02-12T02:55:19.426Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础复习笔记">
 <meta name="twitter:description" content="对象交互与容器之前的语言基础细节整理">
@@ -328,6 +328,8 @@
         <p>​    include, overload,  unsigned, virtual, friend不是Java的关键字</p>
 <p>​    常量声明前加Final，名称全大写</p>
 <p>​    布尔类型声明boolean</p>
+<p>​    for:each语句</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">String[] ar = <span class="keyword">new</span> String[]&#123;<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>&#125;;</span><br><span class="line"><span class="keyword">for</span>( String str : ar )&#123;</span><br><span class="line">  System.out.println(str);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>​    数组声明：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> []shuzu;	<span class="comment">//声明时不允许包含长度</span></span><br><span class="line">shuzu = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">4</span>];</span><br><span class="line"><span class="keyword">int</span> [][]shuzu2 =<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>][];	<span class="comment">//和cpp类似</span></span><br><span class="line"><span class="keyword">int</span>[]shuzu3=&#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;	<span class="comment">// 可以不声明长度</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span>[][]a;</span><br><span class="line">a=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>][<span class="number">2</span>];</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> []a=<span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">2</span>][<span class="number">2</span>];	<span class="comment">// 上两句可以合并，二者等价</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span>[]a;</span><br><span class="line">a=&#123;&#123;<span class="number">1</span>,<span class="number">2</span>&#125;,&#123;<span class="number">3</span>,<span class="number">4</span>&#125;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span>[]a = <span class="keyword">new</span> <span class="keyword">int</span>[i];	<span class="comment">//可以创建动态大小的数组</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span>[]b = a;	<span class="comment">//	不同的名管理着同一个数组</span></span><br></pre></td></tr></table></figure>
 <p>​    数组长度length的使用</p>
@@ -411,6 +413,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/02/25/Android简易计算器/" rel="prev" title="Android简易计算器">
+                Android简易计算器 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -485,7 +491,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -498,7 +504,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
